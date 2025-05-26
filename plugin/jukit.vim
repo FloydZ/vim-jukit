@@ -170,7 +170,8 @@ else
 endif
 
 " set encodings for readings with python
-call writefile([g:jukit_file_encodings], jukit#util#plugin_path() . '/helpers/.encodings')
+" call writefile([g:jukit_file_encodings], jukit#util#plugin_path() . '/helpers/.encodings')
+call writefile([g:jukit_file_encodings], '/tmp/.encodings')
 
 """"""""""
 " autocmds 

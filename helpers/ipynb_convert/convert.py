@@ -4,7 +4,8 @@ import argparse, json, os, re
 HEADER = "|%%--%%|"
 MD_MARK = "°°°"
 MODULE_PATH = os.path.dirname(os.path.abspath(__file__))
-with open(os.path.join(MODULE_PATH, "..", ".encodings"), "r") as f:
+#with open(os.path.join(MODULE_PATH, "..", ".encodings"), "r") as f:
+with open(os.path.join("/tmp/.encodings"), "r") as f:
     ENCODING = f.read().strip()
 
 
